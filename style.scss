@@ -43,6 +43,11 @@ ul {
 
     ul {
       list-style: none;
+      a {
+        color: inherit;
+        font-size: inherit;
+        text-decoration: none;
+      }
     }
   }
 
@@ -51,27 +56,25 @@ ul {
     min-height: 750px;
     min-width: 600px;
     background-color: $colorGeneral;
+    //уберем избыточность из кода, применим padding-left: 30px ко всем первым дочерним свойствам которые находятся в div класса main
+    > * {
+      padding-left: 30px;
+    }
 
     h1 {
       font-size: 62px;
       -webkit-margin-before: 0;
       padding-top: 40px;
-      padding-left: 30px;
-    }
-
-    video {
-      padding-left: 30px;
+      
     }
 
     p {
-      padding-left: 30px;
       width: 55%;
       min-width: 550px;
     }
 
     a {
       color: inherit;
-      padding-left: 30px;
       text-decoration: none;
     }
 
@@ -80,8 +83,6 @@ ul {
     }
 
     ul {
-      padding-left: 30px;
-
       li {
         font-size: 0.85rem;
       }

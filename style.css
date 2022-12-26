@@ -1,11 +1,13 @@
 /*variables*/
-html, body {
+html,
+body {
   margin: 0;
   font-family: Arial;
   color: #ffffff;
 }
 
-p, a {
+p,
+a {
   font-size: 0.75rem;
 }
 
@@ -38,39 +40,36 @@ ul {
 .container .nav ul {
   list-style: none;
 }
+.container .nav ul a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
 .container .main {
   width: 85%;
   min-height: 750px;
   min-width: 600px;
   background-color: #FFCFCF;
 }
+.container .main > * {
+  padding-left: 30px;
+}
 .container .main h1 {
   font-size: 62px;
   -webkit-margin-before: 0;
   padding-top: 40px;
-  padding-left: 30px;
-}
-.container .main video {
-  padding-left: 30px;
 }
 .container .main p {
-  padding-left: 30px;
   width: 55%;
   min-width: 550px;
 }
 .container .main a {
   color: inherit;
-  padding-left: 30px;
   text-decoration: none;
 }
 .container .main a:hover {
   text-decoration: underline;
 }
-.container .main ul {
-  padding-left: 30px;
-}
 .container .main ul li {
   font-size: 0.85rem;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
