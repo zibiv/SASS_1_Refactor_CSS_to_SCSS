@@ -2,6 +2,14 @@
 $colorWhite: #ffffff;
 $colorGeneral: #FFCFCF;
 
+//используем mixin для задания стиля при наведении и применим его для меню и ссылки на вторую страницу shows.html
+@mixin a-hover{
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
 html,
 body {
   margin: 0;
@@ -43,10 +51,13 @@ ul {
 
     ul {
       list-style: none;
-      a {
-        color: inherit;
-        font-size: inherit;
-        text-decoration: none;
+      li {
+        @include a-hover;
+        a {
+          color: inherit;
+          font-size: inherit;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -79,7 +90,7 @@ ul {
     }
 
     a:hover {
-      text-decoration: underline;
+      @include a-hover;
     }
 
     ul {
